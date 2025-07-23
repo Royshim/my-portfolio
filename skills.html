@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills & Talents – My Life, Uncoded</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1f1f23 50%, #0f0f10);
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: #111;
+      padding: 16px 10vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      padding: 80px 10vw 40px;
+      text-align: left;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #e0e0ff;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #cfcfcf;
+    }
+
+    .skills-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      padding: 60px 10vw;
+      background: #0f0f10;
+    }
+
+    .skill-card {
+      background: #1e1e25;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05) rotate(-1deg);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    }
+
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .skill-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #00ffff;
+    }
+
+    .skill-desc {
+      font-size: 1rem;
+      color: #b0b0b0;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.3rem;
+      padding: 50px 20px;
+      font-style: italic;
+      color: #888;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      background: #111;
+      padding: 40px 10vw;
+      color: #aaa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    footer a:hover {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="childhood.html">Childhood</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="aspirations.html">Future</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Uncaging the Mind</h1>
+    <p>I forged these skills in silence. I built them when no one was watching. They are not just talents — they are the tools I sharpened in the dark to cut through the noise.</p>
+  </div>
+
+  <div class="skills-section">
+    <div class="skill-card">
+      <img src="data-science-icon.png" alt="Data Science" class="skill-icon">
+      <div class="skill-title">Data Science</div>
+      <div class="skill-desc">Numbers whisper truth — I know how to listen.</div>
+    </div>
+
+    <div class="skill-card">
+      <img src="ml-icon.png" alt="Machine Learning" class="skill-icon">
+      <div class="skill-title">Machine Learning & AI</div>
+      <div class="skill-desc">I teach machines to think — prediction is my instinct.</div>
+    </div>
+
+    <div class="skill-card">
+      <img src="java.png" alt="C++ and Java" class="skill-icon">
+      <div class="skill-title">C++ & Java</div>
+      <div class="skill-desc">Where performance meets precision — I write with surgical intent.</div>
+    </div>
+
+    <div class="skill-card">
+      <img src="violin-icon.png" alt="Violin" class="skill-icon">
+      <div class="skill-title">Violin & Creative Thinking</div>
+      <div class="skill-desc">I don’t play — I weaponize emotion into melody. Thoughtful, bold, unexpected.</div>
+    </div>
+
+    <div class="skill-card">
+      <img src="game-icon.png" alt="Gaming" class="skill-icon">
+      <div class="skill-title">Gaming Strategy</div>
+      <div class="skill-desc">Games didn’t distract me — they trained me. I see patterns others miss.</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    “These aren’t just skills — they’re my weapons.”
+  </div>
+
+  <footer>
+    <div>
+      &copy; 2025 My Life, Uncoded — Built with vision and raw code
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

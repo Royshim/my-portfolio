@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Aspirations – My Life, Uncoded</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, rgba(10,10,25,0.9), rgba(0,0,0,0.95)), url('https://images.pexels.com/photos/176842/pexels-photo-176842.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f2f2f2;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: #111;
+      padding: 16px 10vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      padding: 80px 10vw 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #00ffff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .aspirations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 60px 10vw;
+      background: rgba(15, 15, 16, 0.85);
+      backdrop-filter: blur(5px);
+    }
+
+    .aspiration-card {
+      background: rgba(30, 30, 37, 0.6);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .aspiration-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+
+    .aspiration-title {
+      font-size: 1.5rem;
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .aspiration-desc {
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    .ending {
+      padding: 80px 15vw;
+      text-align: center;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #888;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      background: #111;
+      color: #999;
+      text-align: center;
+      padding: 30px 20px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    footer a {
+      color: #ccc;
+      margin: 0 12px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #00ffff;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="childhood.html">Childhood</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="aspirations.html">Future</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Eyes Forward, Soul Rooted</h1>
+    <p>I dream in silence and work in the dark. But the light I seek isn’t in cities or stages — it’s back home, where it all began.</p>
+  </div>
+
+  <div class="aspirations">
+    <div class="aspiration-card">
+      <div class="aspiration-title">Master Machine Learning</div>
+      <div class="aspiration-desc">I want to build intelligent systems that actually matter — ones that solve local problems with global-grade solutions.</div>
+    </div>
+
+    <div class="aspiration-card">
+      <div class="aspiration-title">Build for Kenya</div>
+      <div class="aspiration-desc">I want to create data tools and platforms that speak our language — tech that meets Kenya where it’s at and pushes it forward.</div>
+    </div>
+
+    <div class="aspiration-card">
+      <div class="aspiration-title">Run a Smart Dairy Farm</div>
+      <div class="aspiration-desc">Not just cows — but systems. I want a farm powered by AI, driven by sustainability, and run with ruthless precision.</div>
+    </div>
+
+    <div class="aspiration-card">
+      <div class="aspiration-title">Return to Nyeri</div>
+      <div class="aspiration-desc">The endgame has always been Nyeri. I want to build quietly, surrounded by the same hills that raised me.</div>
+    </div>
+
+    <div class="aspiration-card">
+      <div class="aspiration-title">Be Relentlessly Curious</div>
+      <div class="aspiration-desc">Learning is my only religion. I’ll keep questioning, testing, exploring — for as long as I breathe.</div>
+    </div>
+  </div>
+
+  <div class="ending">
+    "I don’t want fame. I don’t even want applause. I want to build something that still stands when I am long gone. That’s the goal."
+  </div>
+
+  <footer>
+    <div>&copy; 2025 My Life, Uncoded</div>
+    <div>
+      <a href="index.html">Home</a>
+      •
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,205 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education | My Life, Uncoded</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 10;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('home.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 2rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin: 0;
+      animation: fadeUp 1.5s ease-out forwards;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      margin-top: 1rem;
+      animation: fadeUp 2.5s ease-out forwards;
+    }
+
+    .timeline {
+      padding: 5rem 2rem 3rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .edu-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-in-out;
+    }
+
+    .edu-block.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .edu-block img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 18px;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease;
+    }
+
+    .edu-block img:hover {
+      transform: scale(1.03);
+    }
+
+    .block-text {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .block-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .block-text p {
+      font-size: 1rem;
+      color: #c0c0c0;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px 20px;
+      color: #999;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #00ffff;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="childhood.html">Childhood</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="aspirations.html">Future</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>From Nyeri to the Future</h1>
+    <p>From dusty classrooms to big dreams — this is the journey of a boy learning to fly through knowledge.</p>
+  </section>
+
+  <section class="timeline">
+    <div class="edu-block">
+      <img src="nyericomplex.jpg" alt="Nyeri Complex Primary School">
+      <div class="block-text">
+        <h2>Nyeri Complex Primary</h2>
+        <p>Where it all began. Curiosity bloomed between chalkboards and playgrounds. The earliest code wasn’t in Python, it was the discipline etched into morning routines.</p>
+      </div>
+    </div>
+
+    <div class="edu-block">
+      <img src="highschool.png" alt="Kagumo High School">
+      <div class="block-text">
+        <h2>Kagumo High School</h2>
+        <p>Prestigious and pressure-filled. This is where the seed of ambition met fire. Late-night studies, early morning drills — where I learned resilience and strategy.</p>
+      </div>
+    </div>
+
+    <div class="edu-block">
+      <img src="zetech university.jpg" alt="Zetech University">
+      <div class="block-text">
+        <h2>Zetech University</h2>
+        <p>2024 marked my leap into Software Engineering. Not just about syntax — this is where I started building my legacy. ML, data, code — all merging into identity.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>&copy; 2025 My Life, Uncoded</div>
+    <div>
+      <a href="index.html">Home</a> •
+      <a href="childhood.html">Childhood</a> •
+      <a href="education.html">Education</a> •
+      <a href="skills.html">Skills</a> •
+      <a href="aspirations.html">Future</a> •
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    });
+
+    document.querySelectorAll('.edu-block').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
